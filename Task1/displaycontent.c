@@ -5,7 +5,7 @@
 #include <sys/types.h> 
 #include <sys/stat.h>
 #include <fcntl.h>
-#include <unistd.h>     // for read/write
+#include <unistd.h>     // for read/write/close syscall
 
 #define BUFF_LENGTH 128
 
@@ -13,8 +13,6 @@ int main (int argc, char* argv[]) {
     int fd;
     
     char *filename = argv[1];
-
-    errno = 0;          // indicates what error occurred
 
     fd = open(filename, O_RDONLY);
 
