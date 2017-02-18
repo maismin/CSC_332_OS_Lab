@@ -18,7 +18,7 @@ int main(int argc, char *argv[]) {
     * otherwise function ends
     */ 
     if (argc != 3) {
-        printf("Usage: ./copy SOURCE DEST\n");
+        printf("Usage: command requires two arguments: SOURCE DEST\n");
         return 0;
     }
 
