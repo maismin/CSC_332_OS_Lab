@@ -1,0 +1,3 @@
+Process P calls fork() and creates process Q. Process P continues and prints out the first line.
+Process Q prints the second line and calls fork() to create process R. Process Q continues and
+prints out the third line. Process R runs the if ... else statement and prints out the fourth line.
